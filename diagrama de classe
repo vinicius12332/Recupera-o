@@ -1,0 +1,82 @@
+    private int Uf;
+    private String CEP;
+    private String Cidade;
+    private String Pais;
+
+    public void setRua(String Rua) { this.Rua = Rua; }
+
+    public String getRua() { return this.Rua; }
+
+    public void setUf(int Uf) { this.Uf = Uf; }
+
+    public int getUf() { return this.Uf; }
+
+    public void setCep(String Cep) { this.Cep = Cep; }
+
+    public String getCep() { return this.Cep; }
+
+    public void setCidade(String Cidade) { this.Cidade = Cidade; }
+
+    public String getCidade() { return this.Cidade; }
+
+    public void setPais(String Pais) { this.Pais = Pais; }
+
+    public String getPais() { return this.Pais; }
+
+    public String toString() {
+        return "Uf " + Rua + ", " + Cep + ", " + Pais + ", " + Cidade;
+
+    }
+
+}
+
+
+
+package sample.model;
+
+public class Produto {
+
+   private String nome;
+   private String preco;
+
+   public String getNome() {
+       return nome;
+   }
+
+   public void setNome(String nome) {
+       this.nome = nome;
+   }
+
+   public String getPreco() {
+       return preco;
+   }
+
+   public void setPreco(String preco) {
+       this.preco = preco;
+   }
+
+   @Override
+   public String toString() {
+       return "Nome: " + nome + "Preço: " + preco;
+   }
+}
+
+
+
+import sample.model.Produto;
+
+public class Main {
+
+
+   public static void main(String[] args) {
+
+       Produto produto = new Produto();
+       produto.setNome("IPHONE 13");
+       produto.setPreco("R$ 15,000");
+       System.out.println(produto);
+
+   }
+
+}
+
+
